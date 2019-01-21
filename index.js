@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
     './rules/best-pratices',
-    './rules/error',
+    './rules/errors',
     './rules/es6',
     './rules/node',
     './rules/strict',
@@ -20,11 +20,11 @@ module.exports = {
     es6: true // 启用除了module外的所有es6特性
   },
   // 对于未定义的变量，会被`no-undef`规则检测并警告。使用全局变量时，如果不想被`eslint`检测，可通过global进行配置。
-  global: {
-    document: false, // 使用document全局变量，且document不能被覆写。设置为true时，表示可以被覆写
-    navigator: false,
-    window: false
-  },
+  // global: {
+  //   document: false, // 使用document全局变量，且document不能被覆写。设置为true时，表示可以被覆写
+  //   navigator: false,
+  //   window: false
+  // },
   // 支持第三方插件，插件使用前需先安装
   // plugins: [],
   // "off" or 0 - 禁用规则
